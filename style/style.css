@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  height: 10000px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.container-w {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.header .main-logo {
+  margin-top: 6px;
+}
+
+.header .menu-btn {
+  position: relative;
+  z-index: 9999;
+  display: block;
+  width: 34px;
+  height: 30px;
+  margin-right: 17px;
+}
+
+.header .menu-btn span, .header .menu-btn::before, .header .menu-btn::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  display: block;
+  width: 34px;
+  height: 6px;
+  background: #666666;
+}
+
+.header .menu-btn::before, .header .menu-btn::after {
+  content: '';
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .menu-btn::before {
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+
+.header .menu-btn::after {
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+}
+
+.header .active-menu span {
+  display: none;
+}
+
+.header .active-menu::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .active-menu::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  padding: 20px;
+  background: #18a3dd;
+  overflow-x: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-menu a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.main-menu::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.menu-open {
+  left: 0px;
+}
+/*# sourceMappingURL=style.css.map */

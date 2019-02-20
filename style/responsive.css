@@ -1,0 +1,43 @@
+@media screen and (max-width: 479px) {
+  .main-menu {
+    left: -100%;
+    width: 100%;
+  }
+  .menu-open {
+    left: 0px;
+  }
+  .active-menu span {
+    display: none;
+  }
+  .active-menu::before {
+    background: #fff;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .active-menu::after {
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 279px) {
+  .main-menu {
+    left: -100%;
+    width: 100%;
+  }
+  .menu-open {
+    left: 0px;
+  }
+  .active-menu::before {
+    background: #fff !important;
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  .active-menu::after {
+    background: #fff !important;
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
